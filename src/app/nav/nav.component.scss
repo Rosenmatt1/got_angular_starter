@@ -1,0 +1,26 @@
+.navbar{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100vw; 
+    height: 100px;
+    background-color: #000;
+    background-image: url("/assets/banner.jpg");
+    background-position-x: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 0px 8px;
+        &:hover {
+            color: orange;
+        }
+    }
+    .linkbox{
+        float: right;
+        display:flex;
+        height: 100%;
+        align-items: center;
+    }
+}

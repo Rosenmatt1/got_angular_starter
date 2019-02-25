@@ -9,7 +9,10 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  links:string[] = ["dorne", "winterfell", "essos", "braavos"];
+
   ngOnInit() {
+    
   }
 
 }

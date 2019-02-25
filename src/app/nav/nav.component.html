@@ -1,11 +1,11 @@
 
 <div class="navbar">
   <div class="linkbox">
-    <a routerLink="dorne"> Dorne</a>
+    <!-- <a routerLink="dorne"> Dorne</a>
     <a routerLink="winterfell"> Winterfell</a>
     <a routerLink="essos"> Essos</a>
-    <a routerLink="braavos"> Braavos</a>
-    <div *ngFor="let character of characters" > {{character}}</div>
+    <a routerLink="braavos"> Braavos</a> -->
+    <a routerLink={{link}} *ngFor="let link of links" > {{link}}</a>
   
   </div>
 </div>

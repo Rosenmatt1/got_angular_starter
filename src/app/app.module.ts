@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { DorneComponent } from './dorne/dorne.component';
 import { WinterfellComponent } from './winterfell/winterfell.component';
+import { EssosComponent } from './essos/essos.component';
+import { BraavosComponent } from './braavos/braavos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DorneComponent,
-    WinterfellComponent
+    WinterfellComponent,
+    EssosComponent,
+    BraavosComponent
   ],
   imports: [
     BrowserModule,

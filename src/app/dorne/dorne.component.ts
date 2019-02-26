@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service'
 
 @Component({
   selector: 'app-dorne',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DorneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private reg: MessageService) { }
+  aryaList: string[];
 
   ngOnInit() {
+    this.aryaList = this.reg.getsAryaList();
   }
+
 
 }

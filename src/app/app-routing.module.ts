@@ -9,8 +9,8 @@ const routes: Routes = [
 
   {path: "winterfell", component: WinterfellComponent},
   {path: "dorne" , component: DorneComponent},
-  {path: "essos", component: EssosComponent },
-  {path: "braavos", component: BraavosComponent }
+  {path: "essos", component: EssosComponent},
+  {path: "braavos", component: BraavosComponent}
 ];
 
 @NgModule({

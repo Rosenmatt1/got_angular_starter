@@ -10,6 +10,7 @@ export class AppComponent {
   season_8:boolean = false;
 
   characters:string[] = ["Tyrian", "Deanerys", "The Hound", "Aryah Stark"];
+  
   links:string[] = ["dorne", "winterfell", "essos", "braavos"];
 
   counter:number = 0; 

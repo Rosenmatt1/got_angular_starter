@@ -1,4 +1,14 @@
-<p>
-  winterfell works!
-  My data: {{my_data}}
-</p>
+My data: {{my_data}}
+
+<div class="sandbox">
+  <input (input)="addName($event)" />
+  <button>Add Name to List</button>
+
+  <br>
+  <div>
+    {{newText}}
+  </div>
+
+</div>
+
+Arya List: {{aryaList}}

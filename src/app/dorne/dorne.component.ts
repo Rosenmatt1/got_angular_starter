@@ -9,6 +9,7 @@ import { MessageService } from '../message.service'
 export class DorneComponent implements OnInit {
 
   constructor(private reg: MessageService) { }
+  
   aryaList: string[];
 
   ngOnInit() {

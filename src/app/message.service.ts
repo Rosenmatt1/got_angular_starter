@@ -12,5 +12,10 @@ export class MessageService {
   getsAryaList() {
     return this.aryaList;
   }
+
+  addName(name:string) {
+    console.log("I'm here")
+    this.aryaList.push(name)
+  }
   
 }

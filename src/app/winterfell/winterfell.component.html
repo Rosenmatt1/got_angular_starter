@@ -1,8 +1,8 @@
 My data: {{my_data}}
 
 <div class="sandbox">
-  <input (input)="addName($event)" />
-  <button>Add Name to List</button>
+  <input (input)="setName($event)" />
+  <button (click)="sendName()">Add Name to List</button>
 
   <br>
   <div>
@@ -11,4 +11,8 @@ My data: {{my_data}}
 
 </div>
 
-Arya List: {{aryaList}}
+Arya List:
+
+<div *ngFor="let name of aryaList">
+  {{name}}
+</div>

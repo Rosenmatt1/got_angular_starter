@@ -3,16 +3,22 @@ My data: {{my_data}}
 <div class="sandbox">
   <input (input)="setName($event)" />
   <button (click)="sendName()">Add Name to List</button>
-
   <br>
   <div>
     {{newText}}
   </div>
-
 </div>
 
 Arya List:
-
 <div *ngFor="let name of aryaList">
   {{name}}
 </div>
+
+
+<div>{{gotData.name}}</div>
+
+<div *ngFor="let image of gotData.images">
+  <img src="{{image.url}}" />
+</div>
+
+<!-- <img src={{gotData.images[0].url}} /> -->

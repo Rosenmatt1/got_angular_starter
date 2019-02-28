@@ -20,7 +20,7 @@ export class DorneComponent implements OnInit {
   }
 
   loadData() {
-    this.data.getData("winterfell").subscribe(payload => {
+    this.data.getData("dorne").subscribe(payload => {
       this.gotData = payload
       console.log(payload)
     })

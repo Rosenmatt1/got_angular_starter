@@ -1,9 +1,11 @@
+<h1>{{gotData.name}}</h1>
+
 <p>
   dorne works!
 
   When arya comes to Dorne, her list reads: {{aryaList}}
 </p>
 
-<div *ngFor="let image of gotData.images">
-  <img src="{{image.url}}" />
+<div class="picture" >
+  <img *ngFor="let image of gotData.images" src="{{image.url}}" />
 </div>

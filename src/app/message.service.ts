@@ -14,7 +14,6 @@ export class MessageService {
   }
 
   addName(name:string) {
-    console.log("I'm here")
     this.aryaList.push(name)
   }
   

@@ -8,9 +8,8 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
 
-
   getData(places) {
-    return this.http.get(`https://guarded-spire-16362.herokuapp.com/get_region/${places}`)
+    return this.http.get(`http://cors-anywhere.herokuapp.com/https://guarded-spire-16362.herokuapp.com/get_region/${places}`)
   }
 
 }

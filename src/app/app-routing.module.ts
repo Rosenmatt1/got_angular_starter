@@ -8,7 +8,7 @@ import {BraavosComponent } from './braavos/braavos.component'
 const routes: Routes = [
 
   {path: "winterfell", component: WinterfellComponent},
-  {path: "dorne" , component: DorneComponent},
+  {path: "dorne", component: DorneComponent},
   {path: "essos", component: EssosComponent},
   {path: "braavos", component: BraavosComponent}
 ];
@@ -17,4 +17,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

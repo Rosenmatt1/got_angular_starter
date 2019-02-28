@@ -34,7 +34,7 @@ export class WinterfellComponent implements OnInit {
 
   setName(e: any) {
     this.newName = e.target.value
-    console.log("it worked")
+    console.log(this.newName)
   }
 
   sendName() {

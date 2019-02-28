@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-braavos',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BraavosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data:DataService) { }
+
+  gotData:{}
 
   ngOnInit() {
+    this.loadData()
+  }
+
+  loadData() {
+    this.data.getData("braavos").subscribe(payload => {
+      this.gotData = payload
+      console.log(payload)
+    })
   }
 
 }

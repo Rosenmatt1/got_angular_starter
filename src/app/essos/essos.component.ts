@@ -14,6 +14,7 @@ export class EssosComponent implements OnInit {
   aryaList: string[];
   newName: string;
   gotData: {};
+  nameToDelete: string;
 
   ngOnInit() {
     this.aryaList = this.message.getsAryaList();
@@ -34,12 +35,13 @@ export class EssosComponent implements OnInit {
     console.log(this.newName)
   }
 
-  sendName() {
-    this.message.addName(this.newName)
+  selectNameToDelete(e) {
+    this.nameToDelete = e.target.parentNode.childNodes[1].data
   }
 
-  selectNameToDelete(e) {
-    this.message.removeFromList(e.target.parentNode.childNodes[1].data)
+  sendNameToDelete() {
+    this.message.removeFromList(this.nameToDelete)
+    this.aryaList = this.message.getsAryaList()
   }
 
 }

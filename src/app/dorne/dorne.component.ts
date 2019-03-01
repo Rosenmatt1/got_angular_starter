@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from '../message.service'
+import { MessageService } from '../message.service';
 import { DataService } from '../data.service';
 
 @Component({
@@ -9,13 +9,14 @@ import { DataService } from '../data.service';
 })
 export class DorneComponent implements OnInit {
 
-  constructor(private reg: MessageService, private data:DataService) { }
+  constructor(private message: MessageService, private data:DataService) { }
   
   aryaList: string[];
-  gotData:{};
+  newName: string;
+  gotData: {};
 
   ngOnInit() {
-    this.aryaList = this.reg.getsAryaList();
+    this.aryaList = this.message.getsAryaList();
     this.loadData();
   }
 
@@ -26,5 +27,13 @@ export class DorneComponent implements OnInit {
     })
   }
 
+  setName(e: any) {
+    this.newName = e.target.value
+    console.log(this.newName)
+  }
+
+  sendName() {
+    this.message.addName(this.newName)
+  }
 
 }

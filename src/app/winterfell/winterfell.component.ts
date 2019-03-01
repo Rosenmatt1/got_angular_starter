@@ -12,7 +12,6 @@ export class WinterfellComponent implements OnInit {
 
   constructor(private reggie: RegionServiceService, private message: MessageService, private data: DataService) { }
 
-  
   aryaList: string[];
   newName: string;
   gotData: {};

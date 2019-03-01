@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { MessageService } from '../message.service';
 
 
 @Component({
@@ -9,12 +10,16 @@ import { DataService } from '../data.service';
 })
 export class BraavosComponent implements OnInit {
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService, private message: MessageService) { }
 
-  gotData: {}
+  aryaList: string[];
+  newName: string;
+  gotData: {};
 
   ngOnInit() {
-    this.loadData()
+
+    this.aryaList = this.message.getsAryaList();
+    this.loadData();
   }
 
   image_path:string = 'assets/images/braavos.png';
@@ -24,6 +29,15 @@ export class BraavosComponent implements OnInit {
       this.gotData = payload
       console.log(payload)
     })
+  }
+
+  setName(e: any) {
+    this.newName = e.target.value
+    console.log(this.newName)
+  }
+
+  sendName() {
+    this.message.addName(this.newName)
   }
 
 }

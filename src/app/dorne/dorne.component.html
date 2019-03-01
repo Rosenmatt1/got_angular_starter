@@ -1,8 +1,15 @@
 <h1>{{gotData.name}}</h1>
 
-<p>
-  When arya comes to Dorne, her list reads: {{aryaList}}
-</p>
+<div class="sandbox">
+  <button (click)="sendName()">Add Name to List</button>
+  <input (input)="setName($event)" />
+  <br>
+  Arya List:
+  <div *ngFor="let name of aryaList"> {{name}} </div>
+  <!-- <p class="bold">
+    When Arya comes to Dorne, her list reads: {{aryaList}}
+  </p> -->
+</div>
 
 <div class="picture" >
   <img *ngFor="let image of gotData.images" src="{{image.url}}" />

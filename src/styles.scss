@@ -8,11 +8,14 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
 }
 
 h1 {
   text-align: center;
+}
+
+.bold {
+  text-transform: bold;
 }
 
 .picture {

@@ -41,4 +41,8 @@ export class WinterfellComponent implements OnInit {
     this.message.addName(this.newName)
   }
 
+  selectNameToDelete() {
+    
+  }
+
 }

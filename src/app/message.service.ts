@@ -16,5 +16,9 @@ export class MessageService {
   addName(name:string) {
     this.aryaList.push(name)
   }
+
+  removeFromList(name:string) {
+
+  }
   
 }

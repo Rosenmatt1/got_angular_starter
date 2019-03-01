@@ -1,12 +1,12 @@
 <h1>{{gotData.name}}</h1>
 
 <div class="sandbox">
-  <button (click)="sendName()">Add Name to List</button>
+  <button class="mb-1" (click)="sendName()">Add Name to List</button>
   <input (input)="setName($event)" />
   <br>
   Arya List:
   <div *ngFor="let name of aryaList"> <input (change)="selectNameToDelete($event)" type="checkbox"> {{name}} </div>
-  <button (click)="sendNameToDelete()">Delete Name</button>
+  <button class="my-1" (click)="sendNameToDelete()">Delete Name</button>
 </div>
 
 <div class="picture" >

@@ -18,8 +18,8 @@ export class MessageService {
   }
 
   removeFromList(selectedName:string) {
-    console.log("selectedName", selectedName.substring(1, selectedName.length -1).length)
-    let aryaListWithRemoved = this.aryaList.filter(name => name !== selectedName)
+    let cutName = selectedName.substring(1, selectedName.length - 1)
+    let aryaListWithRemoved = this.aryaList.filter(name => name !== cutName)
     this.aryaList = aryaListWithRemoved
   }
   

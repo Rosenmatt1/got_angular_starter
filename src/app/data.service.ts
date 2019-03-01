@@ -12,4 +12,8 @@ export class DataService {
     return this.http.get(`http://cors-anywhere.herokuapp.com/https://guarded-spire-16362.herokuapp.com/get_region/${places}`)
   }
 
+  // postData(data) {
+  //   return this.http.post(`http://cors-anywhere.herokuapp.com/https://guarded-spire-16362.herokuapp.com/get_region/${places}`, data)
+  // }
+
 }

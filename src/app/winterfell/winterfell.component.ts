@@ -15,6 +15,7 @@ export class WinterfellComponent implements OnInit {
   aryaList: string[];
   newName: string;
   gotData: {};
+  nameToDelete:string;
 
   ngOnInit() {
     
@@ -39,7 +40,12 @@ export class WinterfellComponent implements OnInit {
   }
 
   selectNameToDelete(e) {
-    this.message.removeFromList(e.target.parentNode.childNodes[1].data)
+    this.nameToDelete = e.target.parentNode.childNodes[1].data
+  }
+
+  sendNameToDelete() {
+    this.message.removeFromList(this.nameToDelete)
+    this.aryaList = this.message.getsAryaList()
   }
 
 }

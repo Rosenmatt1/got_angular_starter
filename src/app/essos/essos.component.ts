@@ -38,4 +38,8 @@ export class EssosComponent implements OnInit {
     this.message.addName(this.newName)
   }
 
+  selectNameToDelete(e) {
+    this.message.removeFromList(e.target.parentNode.childNodes[1].data)
+  }
+
 }

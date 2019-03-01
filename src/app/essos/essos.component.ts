@@ -16,6 +16,8 @@ export class EssosComponent implements OnInit {
     this.loadData()
   }
 
+  image_path: string = 'assets/images/essos.jpg';
+
   loadData() {
     this.data.getData("essos").subscribe(payload => {
       this.gotData = payload

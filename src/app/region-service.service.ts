@@ -8,7 +8,7 @@ export class RegionServiceService {
 
   constructor() { }
 
-  places = {dorne: "hot place", winterfell: "cold place", essos: "sandy place", braavos: "brave place"}
+  places = {Dorne: "hot place", Winterfell: "cold place", Essos: "sandy place", Braavos: "brave place"}
 
   getRegions() {
     return this.places;

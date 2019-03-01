@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
+
 @Component({
   selector: 'app-braavos',
   templateUrl: './braavos.component.html',
@@ -8,13 +9,15 @@ import { DataService } from '../data.service';
 })
 export class BraavosComponent implements OnInit {
 
-  constructor(private data:DataService) { }
+  constructor(private data: DataService) { }
 
-  gotData:{}
+  gotData: {}
 
   ngOnInit() {
     this.loadData()
   }
+
+  image_path:string = 'assets/images/braavos.png';
 
   loadData() {
     this.data.getData("braavos").subscribe(payload => {

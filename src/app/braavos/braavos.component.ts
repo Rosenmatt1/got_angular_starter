@@ -18,7 +18,6 @@ export class BraavosComponent implements OnInit {
   nameToDelete: string;
 
   ngOnInit() {
-
     this.aryaList = this.message.getsAryaList();
     this.loadData();
   }
@@ -35,6 +34,10 @@ export class BraavosComponent implements OnInit {
   setName(e: any) {
     this.newName = e.target.value
     console.log(this.newName)
+  }
+
+  sendName() {
+    this.message.addName(this.newName)
   }
 
   selectNameToDelete(e) {

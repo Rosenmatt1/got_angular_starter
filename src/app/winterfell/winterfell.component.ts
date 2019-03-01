@@ -18,7 +18,6 @@ export class WinterfellComponent implements OnInit {
   nameToDelete:string;
 
   ngOnInit() {
-    
     this.aryaList = this.message.getsAryaList();
     this.loadData();
   }

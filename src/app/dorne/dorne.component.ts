@@ -33,6 +33,10 @@ export class DorneComponent implements OnInit {
     console.log(this.newName)
   }
 
+  sendName() {
+    this.message.addName(this.newName)
+  }
+
   selectNameToDelete(e) {
     this.nameToDelete = e.target.parentNode.childNodes[1].data
   }

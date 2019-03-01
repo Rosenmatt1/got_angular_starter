@@ -12,15 +12,13 @@ export class WinterfellComponent implements OnInit {
 
   constructor(private reggie: RegionServiceService, private message: MessageService, private data: DataService) { }
 
-  region_data: {};
-  my_data: string;
+  
   aryaList: string[];
   newName: string;
   gotData: {};
 
   ngOnInit() {
-    this.region_data = this.reggie.getRegions();
-    this.my_data = this.region_data["winterfell"];
+    
     this.aryaList = this.message.getsAryaList();
     this.loadData();
   }
@@ -41,8 +39,8 @@ export class WinterfellComponent implements OnInit {
     this.message.addName(this.newName)
   }
 
-  selectNameToDelete() {
-    
+  selectNameToDelete(e) {
+    this.message.removeFromList(e.target.parentNode.childNodes[1].data)
   }
 
 }

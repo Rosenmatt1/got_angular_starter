@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBxhjQ-z1LdNv_VD-IOJHwaGh9U8PjlX6c",
+      authDomain: "game-of-thrones-angular.firebaseapp.com",
+      databaseURL: "https://game-of-thrones-angular.firebaseio.com",
+      projectId: "game-of-thrones-angular",
+      storageBucket: "game-of-thrones-angular.appspot.com",
+      messagingSenderId: "162120474526"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
 </head>
 <body>
   <app-root></app-root>
